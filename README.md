@@ -1,27 +1,75 @@
-<img src="assets/FocusMe-Logo.png" height="400px">
+Cronograma de Estudos – Técnica Pomodoro
 
-# **FocusMe**
-Projeto da disciplina de Desenvolvimento de Software (2025.1) do Centro de Informática da UFPE
+Este projeto é uma aplicação fullstack para gerenciamento de cronogramas de estudo baseados na técnica Pomodoro.
 
-### **Contexto**
-O projeto é uma aplicação com integração de API para inteligencia artificial generativa, e a proposta central é solucionar o problema de organização da rotina de estudos para pessoas com rotinas apertadas.
+A aplicação permite:
+✅ Criar usuários
+✅ Criar e listar cronogramas por usuário
+✅ Exibir cronogramas organizados por dias da semana
+✅ Utilizar um parser de Markdown para formatar os cronogramas
 
-### **Equipe**
-* Ádson Viana \<aav>
-* Arthur Fernandes \<afol>
-* Gabriel Rio \<grtc>
-* Juan Lucas \<jlcm>
-* Maria Amorim \<maca>
-* Raul Silva \<rvas>
+Tecnologias Utilizadas
+Backend
 
-### **Sobre a Aplicação**
+FastAPI – Framework para construção de APIs
 
-O FocusMe é um software que auxilia na organização da sua rotina de estudos com o auxílio de inteligência artificial para ajustar os melhores horários de estudos, tudo isso de maneira personalizada levando em consideração a sua rotina, disponibilidade, matérias e dificuldades. E o melhor de tudo isso é a possibilidade que o FocusMe tem de atualizar o cronograma da sua semana em tempo real, basta você enviar uma mensagem para o nosso assistente virtual, o Fábio! Entre no chat da aplicação e informe as alterações necessárias para continuar com o seu cronograma focado, funcional e atualizado para você!
+SQLAlchemy – ORM para modelagem do banco de dados
 
-### **Como Configurar o Projeto Localmente**
+SQLite – Banco de dados (pode ser trocado por PostgreSQL, MySQL etc.)
 
-1. Pré-requisitos: ter instalado na máquina o [node.js](http://node.js) (pode ser baixado no site [https://nodejs.org/en](https://nodejs.org/en)), o git (pode ser baixado no site [https://git-scm.com/downloads](https://git-scm.com/downloads)) e o react (pode ser baixado e no site [https://react.dev/](https://react.dev/) ) e um editor de código
-2. Clone o repositório com o comando: “git clone [https://github.com/Equipe07-DS/FocusMe.git](https://github.com/Equipe07-DS/FocusMe.git)”
-3. Pelo terminal entre na pasta do backend e instale as dependências do backend pelo comando  “pip install \-r requirements.txt”
-4. Em seguida, entre na pasta app e use o comando “uvicorn main:app  \--reload” (caso queira verificar se está tudo funcionando abra o navegador e coloque no endereço: “[http://localhost:8000/redoc](http://localhost:8000/redoc)”)
-5. Abra outro terminal e entre na pasta do frontend e use o comando “npm install” em seguida “npm start”
+Frontend
+
+React – Biblioteca para construção da interface
+
+Axios – Cliente HTTP para consumir a API
+
+React Markdown – Renderização do cronograma em Markdown                                                                                                                                                                            
+Backend (FastAPI)
+
+
+⚙️ Como Rodar o Projeto
+Clone o repositório:
+
+git clone https://github.com/seu-usuario/cronograma-pomodoro.git
+cd cronograma-pomodoro/backend
+
+
+Crie um ambiente virtual:
+
+python -m venv venv
+source venv/bin/activate   # Linux/Mac
+venv\Scripts\activate      # Windows
+
+
+Instale as dependências:
+
+pip install -r requirements.txt
+
+
+Rode a API:
+
+uvicorn main:app --reload
+
+
+Acesse a documentação automática:
+
+Swagger: http://127.0.0.1:8000/docs
+
+Redoc: http://127.0.0.1:8000/redoc
+
+Frontend (React)
+
+Vá para a pasta do frontend:
+
+cd ../frontend
+
+Instale as dependências:
+
+npm install
+
+Rode o servidor de desenvolvimento:
+
+npm start
+
+Acesse em:
+http://localhost:3000
