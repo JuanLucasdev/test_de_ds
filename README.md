@@ -30,7 +30,7 @@ Backend (FastAPI)
 ⚙️ Como Rodar o Projeto
 Clone o repositório:
 
-git clone https://github.com/seu-usuario/cronograma-pomodoro.git
+git clone 
 cd cronograma-pomodoro/backend
 
 
