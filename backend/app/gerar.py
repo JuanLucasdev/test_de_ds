@@ -2,7 +2,7 @@ from openai import OpenAI
 
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="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",
+    api_key="Api key here!!!",
 )
 
 def gerar_resposta(messages):
